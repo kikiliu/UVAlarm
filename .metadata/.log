@@ -1,0 +1,180 @@
+!SESSION 2014-10-20 15:55:29.847 -----------------------------------------------
+eclipse.buildId=1.0.0 b3
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en
+Framework arguments:  -keyring /Users/DerekKuo/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -data /Users/DerekKuo/Desktop/I290/UVAlarm -keyring /Users/DerekKuo/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2014-10-20 15:55:39.050
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.tizen.common.ui.Startup 1 0 2014-10-20 15:55:45.271
+!MESSAGE SDK Information: Path [/Users/DerekKuo/Desktop/tizen-wearable-sdk], Data Path [/Users/DerekKuo/tizen-wearable-sdk-data], Platform Path [/Users/DerekKuo/Desktop/tizen-wearable-sdk/platforms/tizenw-1.0]
+
+!ENTRY org.eclipse.jface 2 0 2014-10-20 15:55:50.443
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-10-20 15:55:50.443
+!MESSAGE A conflict occurred for COMMAND+]:
+Binding(COMMAND+],
+	ParameterizedCommand(Command(org.tizen.common.gom.smartlaunch.ui.tizensmartlauncher.up,Backward Launch History,
+		,
+		Category(org.tizen.common.gom.category,Smart Launch,null,true),
+		org.tizen.common.gom.smartlaunch.handler.GomSmartLaunchCycleHandler:true,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+Binding(COMMAND+],
+	ParameterizedCommand(Command(org.eclipse.ui.navigate.forwardHistory,Forward History,
+		Move forward in the editor navigation history,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		ActionHandler(org.eclipse.ui.internal.NavigationHistoryAction@56d5e457),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-10-20 15:55:50.443
+!MESSAGE A conflict occurred for COMMAND+[:
+Binding(COMMAND+[,
+	ParameterizedCommand(Command(org.tizen.common.gom.smartlaunch.ui.tizensmartlauncher.down,Forward Launch History,
+		,
+		Category(org.tizen.common.gom.category,Smart Launch,null,true),
+		org.tizen.common.gom.smartlaunch.handler.GomSmartLaunchCycleHandler:true,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+Binding(COMMAND+[,
+	ParameterizedCommand(Command(org.eclipse.ui.navigate.backwardHistory,Backward History,
+		Move backward in the editor navigation history,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		ActionHandler(org.eclipse.ui.internal.NavigationHistoryAction@7482384a),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-10-20 15:55:50.443
+!MESSAGE A conflict occurred for COMMAND+SHIFT+F10:
+Binding(COMMAND+SHIFT+F10,
+	ParameterizedCommand(Command(org.eclipse.ui.project.buildProject,Build Project,
+		Build the selected project,
+		Category(org.eclipse.ui.category.project,Project,null,true),
+		ActionHandler(org.eclipse.ui.actions.BuildAction@113dbe08),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+F10,
+	ParameterizedCommand(Command(org.eclipse.ui.window.showSystemMenu,Show System Menu,
+		Show the system menu,
+		Category(org.eclipse.ui.category.window,Window,null,true),
+		org.eclipse.ui.internal.ShowPartPaneMenuHandler@6c87080f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-10-20 15:55:50.443
+!MESSAGE A conflict occurred for COMMAND+F12:
+Binding(COMMAND+F12,
+	ParameterizedCommand(Command(org.tizen.common.gom.smartlaunch.ui.tizensmartlauncher.new,New Launch Configuration,
+		,
+		Category(org.tizen.common.gom.category,Smart Launch,null,true),
+		org.tizen.common.gom.smartlaunch.handler.GomSmartLaunchHandler:true,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+Binding(COMMAND+F12,
+	ParameterizedCommand(Command(org.eclipse.ui.window.activateEditor,Activate Editor,
+		Activate the editor,
+		Category(org.eclipse.ui.category.window,Window,null,true),
+		org.eclipse.ui.internal.ActivateEditorHandler@15224873,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+!SESSION 2014-10-20 15:56:27.594 -----------------------------------------------
+eclipse.buildId=1.0.0 b3
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en
+Framework arguments:  -keyring /Users/DerekKuo/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/DerekKuo/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2014-10-20 15:56:37.973
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jface 2 0 2014-10-20 15:56:40.036
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-10-20 15:56:40.036
+!MESSAGE A conflict occurred for COMMAND+]:
+Binding(COMMAND+],
+	ParameterizedCommand(Command(org.tizen.common.gom.smartlaunch.ui.tizensmartlauncher.up,Backward Launch History,
+		,
+		Category(org.tizen.common.gom.category,Smart Launch,null,true),
+		org.tizen.common.gom.smartlaunch.handler.GomSmartLaunchCycleHandler:true,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+Binding(COMMAND+],
+	ParameterizedCommand(Command(org.eclipse.ui.navigate.forwardHistory,Forward History,
+		Move forward in the editor navigation history,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		ActionHandler(org.eclipse.ui.internal.NavigationHistoryAction@5affce21),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-10-20 15:56:40.036
+!MESSAGE A conflict occurred for COMMAND+[:
+Binding(COMMAND+[,
+	ParameterizedCommand(Command(org.tizen.common.gom.smartlaunch.ui.tizensmartlauncher.down,Forward Launch History,
+		,
+		Category(org.tizen.common.gom.category,Smart Launch,null,true),
+		org.tizen.common.gom.smartlaunch.handler.GomSmartLaunchCycleHandler:true,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+Binding(COMMAND+[,
+	ParameterizedCommand(Command(org.eclipse.ui.navigate.backwardHistory,Backward History,
+		Move backward in the editor navigation history,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		ActionHandler(org.eclipse.ui.internal.NavigationHistoryAction@50360733),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-10-20 15:56:40.036
+!MESSAGE A conflict occurred for COMMAND+SHIFT+F10:
+Binding(COMMAND+SHIFT+F10,
+	ParameterizedCommand(Command(org.eclipse.ui.project.buildProject,Build Project,
+		Build the selected project,
+		Category(org.eclipse.ui.category.project,Project,null,true),
+		ActionHandler(RetargetAction(buildProject)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+F10,
+	ParameterizedCommand(Command(org.eclipse.ui.window.showSystemMenu,Show System Menu,
+		Show the system menu,
+		Category(org.eclipse.ui.category.window,Window,null,true),
+		org.eclipse.ui.internal.ShowPartPaneMenuHandler@b12ce69,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-10-20 15:56:40.036
+!MESSAGE A conflict occurred for COMMAND+F12:
+Binding(COMMAND+F12,
+	ParameterizedCommand(Command(org.tizen.common.gom.smartlaunch.ui.tizensmartlauncher.new,New Launch Configuration,
+		,
+		Category(org.tizen.common.gom.category,Smart Launch,null,true),
+		org.tizen.common.gom.smartlaunch.handler.GomSmartLaunchHandler:true,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+Binding(COMMAND+F12,
+	ParameterizedCommand(Command(org.eclipse.ui.window.activateEditor,Activate Editor,
+		Activate the editor,
+		Category(org.eclipse.ui.category.window,Window,null,true),
+		org.eclipse.ui.internal.ActivateEditorHandler@7fad552c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+
+!ENTRY org.tizen.common.ui.Startup 1 0 2014-10-20 15:56:40.938
+!MESSAGE SDK Information: Path [/Users/DerekKuo/Desktop/tizen-wearable-sdk], Data Path [/Users/DerekKuo/tizen-wearable-sdk-data], Platform Path [/Users/DerekKuo/Desktop/tizen-wearable-sdk/platforms/tizenw-1.0]
+
+!ENTRY org.tizen.common.core.application.tproject.TprojectHandler 4 0 2014-10-20 15:59:15.879
+!MESSAGE [2014.10.20 15:59:15][ERROR] TprojectHandler.java(95) - File does not exist. Check the file path. (project: P/Pedometer, file: /Users/DerekKuo/Desktop/I290/UVAlarm/Pedometer/.tproject)
+
