@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="42" version="2.0">
+<workbench progressCount="47" version="2.0">
 <workbenchAdvisor/>
-<window height="768" width="1024" x="166" y="29">
+<window height="768" width="1086" x="188" y="30">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
 </perspectiveBar>
 <coolbarLayout>
 <coolItem id="group.file" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="106" y="22"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="134" y="22"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.debug.ui.SmartLaunchActionSet" itemType="typeToolBarContribution" x="40" y="22"/>
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="100" y="22"/>
@@ -21,6 +21,9 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="152" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.tizen.web.editor.css.CSSEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.tizen.web.editor.html.HTMLEditor" itemType="typeToolBarContribution" x="248" y="22"/>
+<coolItem id="org.tizen.web.editor.javascript.JavascriptEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -29,17 +32,62 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+</presentation>
 </folder>
 </info>
 </editorArea>
+<editor id="org.tizen.web.editor.html.HTMLEditor" name="index.html" partName="index.html" path="/Users/DerekKuo/Desktop/I290/UVAlarm/HelloWorld/index.html" title="index.html" tooltip="HelloWorld/index.html" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/HelloWorld/index.html"/>
+</editor>
+<editor id="org.tizen.web.editor.javascript.JavascriptEditor" name="app.js" partName="app.js" path="/Users/DerekKuo/Desktop/I290/UVAlarm/ExamplePedometer/js/app.js" title="app.js" tooltip="ExamplePedometer/js/app.js" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ExamplePedometer/js/app.js"/>
+<editorState selectionHorizontalPixel="0" selectionLength="4" selectionOffset="300" selectionTopPixel="0"/>
+</editor>
+<editor id="org.tizen.web.editor.javascript.JavascriptEditor" name="init.js" partName="init.js" path="/Users/DerekKuo/Desktop/I290/UVAlarm/ExamplePedometer/js/views/page/init.js" title="init.js" tooltip="ExamplePedometer/js/views/page/init.js" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ExamplePedometer/js/views/page/init.js"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1836" selectionTopPixel="598"/>
+</editor>
+<editor activePart="true" focus="true" id="org.tizen.web.editor.javascript.JavascriptEditor" name="register.js" partName="register.js" path="/Users/DerekKuo/Desktop/I290/UVAlarm/Pedometer/js/views/page/register.js" title="register.js" tooltip="Pedometer/js/views/page/register.js" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Pedometer/js/views/page/register.js"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="2422"/>
+</editor>
 </editors>
 <views>
 <view id="org.eclipse.ui.views.PropertySheet" partName="Properties">
 <viewState/>
 </view>
+<view id="org.eclipse.ui.views.ResourceNavigator" partName="Navigator">
+<viewState LINK_NAVIGATOR_TO_EDITOR="0" sorter="1">
+<filters>
+<filter element="*.class" isEnabled="false"/>
+<filter element=".*" isEnabled="false"/>
+</filters>
+<expanded>
+<element path="/Pedometer"/>
+<element path="/Pedometer/js"/>
+<element path="/Pedometer/js/views"/>
+<element path="/Pedometer/js/views/page"/>
+</expanded>
+<selection>
+<element path="/Pedometer/js/views/page/register.js"/>
+</selection>
+</viewState>
+</view>
+<view id="org.eclipse.search.ui.views.SearchView" partName="Search">
+<viewState isPinned="false">
+<view IMemento.internal.id="" org.eclipse.search.lastActivation="0"/>
+</viewState>
+</view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<expanded>
+<category IMemento.internal.id="Warnings (31 items)"/>
+</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -48,12 +96,20 @@
 <visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
 </viewState>
 </view>
-<view id="org.eclipse.ui.console.ConsoleView" partName="Console"/>
+<view id="org.tizen.common.connection.explorer.ConnectionExplorer" partName="Connection Explorer">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
+</view>
+<view id="org.tizen.common.connection.log.LogView" partName="Log">
+<viewState/>
+</view>
 <view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.ui.views.ContentOutline" activePerspective="org.tizen.web.ui.perspective.WebWidget">
+<perspectives activePart="org.tizen.web.editor.javascript.JavascriptEditor" activePerspective="org.tizen.web.ui.perspective.WebWidget">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.tizen.web.project.ui.perspective.WebWidgetPerspectiveFactory" id="org.tizen.web.ui.perspective.WebWidget" label="Tizen Web"/>
 <alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
@@ -81,8 +137,12 @@
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="org.eclipse.ui.views.PropertySheet"/>
+<view id="org.eclipse.search.ui.views.SearchView"/>
 <view id="org.eclipse.ui.views.ProblemView"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.tizen.common.connection.log.LogView"/>
+<view id="org.eclipse.ui.views.ResourceNavigator"/>
+<view id="org.tizen.common.connection.explorer.ConnectionExplorer"/>
 <fastViewBars/>
 <layout>
 <mainWindow>
@@ -100,38 +160,46 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="254" ratioRight="762" relationship="2" relative="topLeft"/>
-<info folder="true" part="topRight" ratio="0.7493438" ratioLeft="571" ratioRight="191" relationship="2" relative="org.eclipse.ui.editorss">
+<info folder="true" part="topRight" ratio="0.7775061" ratioLeft="636" ratioRight="182" relationship="2" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
+<page content="org.eclipse.search.ui.views.SearchView" label="Search"/>
 <page content="org.eclipse.debug.ui.DebugView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
+<part id="1"/>
+<part id="2"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="bottomRight" ratio="0.49925926" ratioLeft="337" ratioRight="338" relationship="4" relative="topRight">
-<folder activePageID="org.eclipse.ui.views.PropertySheet" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
-</folder>
-</info>
-<info folder="true" part="bottom" ratio="0.7496296" ratioLeft="506" ratioRight="169" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="bottom" ratio="0.6443452" ratioLeft="433" ratioRight="239" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.tizen.common.connection.log.LogView" label="Log"/>
 <page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
+<part id="2"/>
 </presentation>
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@7a0e046e" ratio="0.49925926" ratioLeft="337" ratioRight="338" relationship="4" relative="topLeft">
-<folder appearance="2" expanded="2">
-<page content="org.tizen.common.connection.explorer.ConnectionExplorer" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<folder activePageID="org.eclipse.ui.views.ResourceNavigator" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ResourceNavigator" label="Navigator"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@7b1a5d31" ratio="0.49925926" ratioLeft="337" ratioRight="338" relationship="4" relative="org.eclipse.ui.internal.ViewStack@7a0e046e">
+<folder activePageID="org.tizen.common.connection.explorer.ConnectionExplorer" appearance="2" expanded="2">
+<page content="org.tizen.common.connection.explorer.ConnectionExplorer" label="Connection Explorer"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
 </folder>
 </info>
 </mainWindow>
@@ -139,7 +207,162 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.tizen.web.editor.javascript.JavascriptEditor" path="/Pedometer/js/app.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.tizen.web.editor.javascript.JavascriptEditor" path="/Pedometer/js/views/page/init.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.tizen.web.editor.javascript.JavascriptEditor" path="/Pedometer/js/core/core/event.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.tizen.web.editor.javascript.JavascriptEditor" path="/Pedometer/js/core/core/application.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.tizen.web.editor.javascript.JavascriptEditor" path="/Pedometer/js/core/core.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.tizen.web.editor.javascript.JavascriptEditor" path="/Pedometer/js/core/core/config.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.tizen.web.editor.javascript.JavascriptEditor" path="/Pedometer/js/views/page/main.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.tizen.web.editor.javascript.JavascriptEditor" path="/Pedometer/js/models/timer.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.tizen.web.editor.javascript.JavascriptEditor" path="/Pedometer/js/core/core/window.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.tizen.web.editor.javascript.JavascriptEditor" path="/Pedometer/js/views/page/register.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.tizen.web.editor.html.HTMLEditor" path="/Pedometer/index.html"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.tizen.web.editor.javascript.JavascriptEditor" path="/Pedometer/js/app.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.tizen.web.editor.html.HTMLEditor" path="/HelloWorld/index.html"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.tizen.web.editor.javascript.JavascriptEditor" path="/HelloWorld/js/app.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.tizen.web.editor.javascript.JavascriptEditor" path="/ExamplePedometer/js/views/page/settings.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.tizen.web.editor.css.CSSEditor" path="/HelloWorld/css/style.css"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.tizen.web.editor.javascript.JavascriptEditor" path="/ExamplePedometer/js/app.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.tizen.web.editor.javascript.JavascriptEditor" path="/ExamplePedometer/js/views/page/init.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.tizen.web.editor.javascript.JavascriptEditor" path="/ExamplePedometer/js/views/page/name.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.tizen.web.editor.javascript.JavascriptEditor" path="/Pedometer/js/views/page/register.js"/>
+</editors>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="core.js" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="application.js" index="3">
+<position/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="config.js" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="104" y="0"/>
+</item>
+<item historyLabel="event.js" index="2">
+<position/>
+</item>
+<item historyLabel="main.js" index="6">
+<position/>
+</item>
+<item historyLabel="event.js" index="2">
+<position/>
+</item>
+<item historyLabel="timer.js" index="7">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="event.js" index="2">
+<position/>
+</item>
+<item historyLabel="application.js" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="event.js" index="2">
+<position/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="104" y="0"/>
+</item>
+<item historyLabel="event.js" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="window.js" index="8">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="event.js" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="104" y="0"/>
+</item>
+<item historyLabel="init.js" index="1">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="104" y="0"/>
+</item>
+<item historyLabel="main.js" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="104" y="0"/>
+</item>
+<item historyLabel="register.js" index="9">
+<position info="not_deleted" x="9192" y="0"/>
+</item>
+<item historyLabel="index.html" index="10"/>
+<item historyLabel="register.js" index="9">
+<position info="not_deleted" x="9192" y="0"/>
+</item>
+<item historyLabel="app.js" index="11">
+<position info="not_deleted" x="215" y="0"/>
+</item>
+<item historyLabel="index.html" index="12"/>
+<item historyLabel="app.js" index="13">
+<position/>
+</item>
+<item historyLabel="index.html" index="12"/>
+<item historyLabel="settings.js" index="14">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="index.html" index="12"/>
+<item historyLabel="style.css" index="15">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="index.html" index="12"/>
+<item historyLabel="app.js" index="13">
+<position info="not_deleted" x="152" y="14"/>
+</item>
+<item historyLabel="index.html" index="12"/>
+<item historyLabel="app.js" index="13">
+<position info="not_deleted" x="152" y="14"/>
+</item>
+<item historyLabel="index.html" index="12"/>
+<item historyLabel="app.js" index="13">
+<position info="not_deleted" x="152" y="14"/>
+</item>
+<item historyLabel="index.html" index="12"/>
+<item historyLabel="app.js" index="13">
+<position info="not_deleted" x="259" y="23"/>
+</item>
+<item historyLabel="app.js" index="16">
+<position info="not_deleted" x="223" y="0"/>
+</item>
+<item historyLabel="index.html" index="12"/>
+<item historyLabel="app.js" index="16">
+<position info="not_deleted" x="223" y="0"/>
+</item>
+<item historyLabel="app.js" index="16">
+<position info="not_deleted" x="228" y="0"/>
+</item>
+<item historyLabel="app.js" index="16">
+<position info="not_deleted" x="300" y="4"/>
+</item>
+<item historyLabel="init.js" index="17">
+<position info="not_deleted" x="1836" y="0"/>
+</item>
+<item historyLabel="name.js" index="18">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="init.js" index="17">
+<position info="not_deleted" x="1836" y="0"/>
+</item>
+<item active="true" historyLabel="register.js" index="19">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+</navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
@@ -157,5 +380,51 @@
 </trimArea>
 </trimLayout>
 </window>
-<mruList/>
+<mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.tizen.web.editor.javascript.JavascriptEditor" name="register.js" tooltip="Pedometer/js/views/page/register.js">
+<persistable path="/Pedometer/js/views/page/register.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.tizen.web.editor.javascript.JavascriptEditor" name="name.js" tooltip="ExamplePedometer/js/views/page/name.js">
+<persistable path="/ExamplePedometer/js/views/page/name.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.tizen.web.editor.javascript.JavascriptEditor" name="init.js" tooltip="ExamplePedometer/js/views/page/init.js">
+<persistable path="/ExamplePedometer/js/views/page/init.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.tizen.web.editor.javascript.JavascriptEditor" name="app.js" tooltip="ExamplePedometer/js/app.js">
+<persistable path="/ExamplePedometer/js/app.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.tizen.web.editor.javascript.JavascriptEditor" name="app.js" tooltip="HelloWorld/js/app.js">
+<persistable path="/HelloWorld/js/app.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.tizen.web.editor.css.CSSEditor" name="style.css" tooltip="HelloWorld/css/style.css">
+<persistable path="/HelloWorld/css/style.css"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.tizen.web.editor.html.HTMLEditor" name="index.html" tooltip="HelloWorld/index.html">
+<persistable path="/HelloWorld/index.html"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.tizen.web.editor.javascript.JavascriptEditor" name="settings.js" tooltip="ExamplePedometer/js/views/page/settings.js">
+<persistable path="/ExamplePedometer/js/views/page/settings.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.tizen.web.editor.javascript.JavascriptEditor" name="main.js" tooltip="Pedometer/js/views/page/main.js">
+<persistable path="/Pedometer/js/views/page/main.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.tizen.web.editor.javascript.JavascriptEditor" name="init.js" tooltip="Pedometer/js/views/page/init.js">
+<persistable path="/Pedometer/js/views/page/init.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.tizen.web.editor.javascript.JavascriptEditor" name="window.js" tooltip="Pedometer/js/core/core/window.js">
+<persistable path="/Pedometer/js/core/core/window.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.tizen.web.editor.javascript.JavascriptEditor" name="event.js" tooltip="Pedometer/js/core/core/event.js">
+<persistable path="/Pedometer/js/core/core/event.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.tizen.web.editor.javascript.JavascriptEditor" name="application.js" tooltip="Pedometer/js/core/core/application.js">
+<persistable path="/Pedometer/js/core/core/application.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.tizen.web.editor.javascript.JavascriptEditor" name="timer.js" tooltip="Pedometer/js/models/timer.js">
+<persistable path="/Pedometer/js/models/timer.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.tizen.web.editor.javascript.JavascriptEditor" name="config.js" tooltip="Pedometer/js/core/core/config.js">
+<persistable path="/Pedometer/js/core/core/config.js"/>
+</file>
+</mruList>
 </workbench>
