@@ -1,0 +1,21 @@
+# view AndroidManifest.xml #generated:36
+-keep class com.samsung.android.example.helloaccessoryconsumer.service.HelloAccessoryConsumerService { <init>(...); }
+
+# view AndroidManifest.xml #generated:26
+-keep class com.samsung.android.example.helloaccessoryconsumer.ui.HelloAccessoryActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:39
+-keep class com.samsung.android.sdk.accessory.RegisterUponInstallReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:44
+-keep class com.samsung.android.sdk.accessory.ServiceConnectionIndicationBroadcastReceiver { <init>(...); }
+
+# onClick res/layout/activity_main.xml #generated:13
+# onClick res/layout/activity_main.xml #generated:23
+# onClick res/layout/activity_main.xml #generated:33
+-keepclassmembers class * { *** mOnClick(...); }
+
+-keepclassmembers class com.samsung.** { *; }
+-keep class com.samsung.** { *; } 
+-dontwarn com.samsung.**
+-keepattributes InnerClasses

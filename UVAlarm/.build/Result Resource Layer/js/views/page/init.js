@@ -12,11 +12,8 @@ define({
         'core/systeminfo',
         'core/application',
         'core/storage/idb',
-        'views/page/main',
-        'views/page/details',
-        'views/page/units',
-        'views/page/delete',
-        'views/page/name'
+        'views/page/current',
+        'views/page/risk'
     ],
     def: function viewsPageInit(req) {
         'use strict';

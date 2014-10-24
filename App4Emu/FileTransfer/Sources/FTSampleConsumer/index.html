@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,user-scalable=no"/>
+	<title>Gear UI</title>
+	<link rel="stylesheet"  href="lib/gear-ui/themes/default/gear.ui.min.css">
+	<!-- load theme file for your application -->
+	<link rel="stylesheet"  href="css/style.css">
+</head>
+<body>
+	<div class="ui-page ui-page-active" id="main">
+		<header class="ui-header">
+			<h2 class="ui-title">FTSampleConsumer</h2>
+		</header>
+		<div class="ui-content">
+			<input type="button" class="ui-btn ui-inline" value="Connect" onclick="initialize();" style="width:100%;"/>
+			<div style="overflow-y:scroll; -webkit-overfolw-scrolling:touch; height:70%;">
+				<ul class="ui-listview">
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="ui-page" id="sendPage">
+		<header class="ui-header">
+			<h2 class="ui-title">Send file ... </h2>
+		</header>
+		<div class="ui-content">
+		<progress id="sendprogress" class="ui-progress-indeterminate" max="100" value="0"></progress>
+        <input type="button" class="ui-btn ui-inline" value="Cancel" onclick="cancelFile();"/>
+    </div>
+    </div>
+    <div id="popupToast" class="ui-popup ui-popup-toast">
+    	<div id="popupToastMsg" class="ui-popup-content" style="overflow-y:scroll;">
+    	</div>
+    </div>
+</body>
+<script type="text/javascript" src="lib/gear-ui/js/gear.ui.min.js"></script>
+<!-- load javascript file for your application -->
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="js/sap.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</html>

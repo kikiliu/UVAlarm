@@ -1,0 +1,19 @@
+# view AndroidManifest.xml #generated:60
+-keep class com.samsung.accessory.sagalleryconsumer.backend.SADeviceAttachedReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:42
+-keep class com.samsung.accessory.sagalleryconsumer.backend.SASmartViewConsumerImpl { <init>(...); }
+
+# view AndroidManifest.xml #generated:22
+-keep class com.samsung.accessory.sagalleryconsumer.ui.GalleryConsumerActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:48
+-keep class com.samsung.android.sdk.accessory.RegisterUponInstallReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:43
+-keep class com.samsung.android.sdk.accessory.ServiceConnectionIndicationBroadcastReceiver { <init>(...); }
+
+-keepclassmembers class com.samsung.** { *; }
+-keep class com.samsung.** { *; } 
+-dontwarn com.samsung.**
+-keepattributes InnerClasses

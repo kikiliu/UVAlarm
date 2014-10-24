@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FTSampleProvider</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">IP Address of Peer Device</string>
+    <string name="service_started">Accessory Service started</string>
+    <string name="device_attached">Peer Device Attached</string>
+    <string name="service_label">Accessory Service Label</string>
+    <string name="ft_provider_activity">FTSampleProvider</string>
+    <string name="file_sender_activity">File Sender</string>
+    <!-- Strings for Entr IP activity -->
+    <string name="enter_ip">Enter IP</string>
+
+</resources>
