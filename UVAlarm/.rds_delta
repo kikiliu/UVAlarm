@@ -1,10 +1,19 @@
 #delete
+res/wgt/js/views/page/name.js
+res/wgt/js/views/page/settings.js
+res/wgt/js/views/page/units.js
 #add
-<<<<<<< Updated upstream
-=======
-res/wgt/js/views/page/applytime.js
-res/wgt/js/views/page/morespfoption.js
->>>>>>> Stashed changes
+res/wgt/images/uv10.png
+res/wgt/images/uv11.png
+res/wgt/images/uv12.png
+res/wgt/images/uv13.png
+res/wgt/images/uv14.png
+res/wgt/images/uv15.png
+res/wgt/images/uv9.png
+res/wgt/js/gesture.js
+res/wgt/js/hammer.js
+res/wgt/js/jquery-1.9.1.js
+res/wgt/js/jquery.mobile-1.4.4.min.js
 #modify
 res/wgt/author-signature.xml
 res/wgt/images/app_icon.png
@@ -16,10 +25,8 @@ res/wgt/images/uv6.png
 res/wgt/images/uv7.png
 res/wgt/images/uv8.png
 res/wgt/index.html
-<<<<<<< Updated upstream
-=======
-res/wgt/js/views/page/apply.js
+res/wgt/js/views/page/current.js
+res/wgt/js/views/page/detecting.js
 res/wgt/js/views/page/init.js
 res/wgt/js/views/page/risk.js
->>>>>>> Stashed changes
 res/wgt/signature1.xml
