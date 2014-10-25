@@ -23,15 +23,18 @@ define({
         }      
         
         function onApplySPF15(){
-            console.log('apply: SPF15'); 
+            console.log('apply: SPF15');
+            e.fire('risk.apply15');
         	e.fire('applytime.show');
         }
         function onApplySPF30(){
-            console.log('apply: SPF30');   
+            console.log('apply: SPF30');
+            e.fire('risk.apply30');
         	e.fire('applytime.show');
         }
         function onApplySPF50(){
-            console.log('apply: SPF50');  
+            console.log('apply: SPF50'); 
+            e.fire('risk.apply50');
         	e.fire('applytime.show');
         }
         function onApplySPFOther(){

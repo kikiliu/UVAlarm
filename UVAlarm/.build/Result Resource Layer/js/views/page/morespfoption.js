@@ -24,22 +24,27 @@ define({
         
         function onApplySPF10(){
             console.log('apply: SPF10'); 
+            e.fire('risk.apply10');
         	e.fire('applytime.show');
         }
         function onApplySPF25(){
-            console.log('apply: SPF25');   
+            console.log('apply: SPF25');
+            e.fire('risk.apply25');
         	e.fire('applytime.show');
         }
         function onApplySPF35(){
-            console.log('apply: SPF35');  
+            console.log('apply: SPF35');
+            e.fire('risk.apply35');
         	e.fire('applytime.show');
         }
         function onApplySPF40(){
-            console.log('apply: SPF40');  
+            console.log('apply: SPF40'); 
+            e.fire('risk.apply40');
         	e.fire('applytime.show');
         }
         function onApplySPF45(){
-            console.log('apply: SPF45');  
+            console.log('apply: SPF45'); 
+            e.fire('risk.apply45');
         	e.fire('applytime.show');
         }
 

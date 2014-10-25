@@ -24,18 +24,22 @@ define({
         
         function onApplyTimeNow(){
             console.log('applytime: Now'); 
+            e.fire('risk.applytimenow');
         	e.fire('risk.show');
         }
         function onApplyTime30m(){
             console.log('applytime: 30m');   
+            e.fire('risk.applytime30m');
         	e.fire('risk.show');
         }
         function onApplyTime60m(){
-            console.log('applytime: 60m');  
+            console.log('applytime: 60m'); 
+            e.fire('risk.applytime60m');
         	e.fire('risk.show');
         }
         function onApplyTime90m(){
-            console.log('applytime: 90m'); 
+            console.log('applytime: 90m');
+            e.fire('risk.applytime90m');
         	e.fire('risk.show');
         }
      
