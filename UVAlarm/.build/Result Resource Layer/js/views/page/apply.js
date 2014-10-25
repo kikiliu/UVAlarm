@@ -22,7 +22,32 @@ define({
             tau.changePage('#Apply');
         }      
         
+        function onApplySPF15(){
+            console.log('apply: SPF15'); 
+        	e.fire('applytime.show');
+        }
+        function onApplySPF30(){
+            console.log('apply: SPF30');   
+        	e.fire('applytime.show');
+        }
+        function onApplySPF50(){
+            console.log('apply: SPF50');  
+        	e.fire('applytime.show');
+        }
+        function onApplySPFOther(){
+            console.log('apply: SPFOther'); 
+        	e.fire('morespfoption.show');
+        }
+        
         function bindEvents() {
+        	var elSPF15 = document.getElementById('spf15'),
+        		elSPF30 = document.getElementById('spf30'),
+        		elSPF50 = document.getElementById('spf50'),
+        		elSPFOther = document.getElementById('spfOther');
+        	elSPF15.addEventListener('click', onApplySPF15);
+        	elSPF30.addEventListener('click', onApplySPF30);
+        	elSPF50.addEventListener('click', onApplySPF50);
+        	elSPFOther.addEventListener('click', onApplySPFOther);
         }
         
         /**

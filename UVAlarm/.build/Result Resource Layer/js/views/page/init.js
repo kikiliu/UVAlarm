@@ -15,7 +15,9 @@ define({
         'views/page/detecting',
         'views/page/current',
         'views/page/risk',
-        'views/page/apply'
+        'views/page/apply',
+        'views/page/applytime',
+        'views/page/morespfoption'
     ],
     def: function viewsPageInit(req) {
         'use strict';

@@ -24,12 +24,12 @@ define({
         }
 
         function show() {
-            console.log('risk: here');            	
+            console.log('risk: show');            	
             tau.changePage('#Risk');
         }      
         
         function onApplySunscreen() {
-            console.log('Risk: here');        	
+            console.log('Risk: applysunscreen');        	
         	e.fire('apply.show');
         }    
         function bindEvents() {
@@ -46,7 +46,8 @@ define({
         }
 
         e.on({
-            'views.page.current.risk.show': show
+            'views.page.current.risk.show': show,
+            'views.page.applytime.risk.show': show
         });
 
         return {
