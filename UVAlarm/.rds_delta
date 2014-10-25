@@ -1,9 +1,6 @@
 #delete
 #add
-res/wgt/images/uv1.png
 #modify
 res/wgt/author-signature.xml
 res/wgt/index.html
-res/wgt/js/views/page/applytime.js
-res/wgt/js/views/page/risk.js
 res/wgt/signature1.xml

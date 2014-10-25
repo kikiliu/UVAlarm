@@ -43,6 +43,7 @@ define({
         function init() {
             page = document.getElementById('Risk');
             bindEvents();
+            
         }
 
         e.on({

@@ -37,6 +37,10 @@ define({
             elCheckRisk.addEventListener('click', onCheckRisk);
         }
 
+       
+        
+        
+        
         /**
          * Initializes module.
          */

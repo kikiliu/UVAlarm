@@ -24,7 +24,7 @@ define({
 
         function show(params) {
             console.log('detecting: here');  
-        	setTimeout(function(){tau.changePage('#Current');}, 5000);        	
+        	setTimeout(function(){tau.changePage('#Current');}, 4000);        	
         }
         
         function bindEvents() {
