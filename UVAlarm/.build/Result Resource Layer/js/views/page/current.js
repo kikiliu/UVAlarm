@@ -26,12 +26,15 @@ define({
         function show(params) {
         }
 
-        function bindEvents() {
-            elCheckRisk.addEventListener('click', onCheckRisk);
-        }
-        
         function onCheckRisk() {
+            console.log('current: here');        	
         	e.fire('risk.show');
+        }        
+        
+        function bindEvents() {
+
+        	var elCheckRisk = document.getElementById('CheckRisk');
+            elCheckRisk.addEventListener('click', onCheckRisk);
         }
 
         /**
@@ -39,8 +42,8 @@ define({
          */
         function init() {
             page = document.getElementById('Current');
-            elCheckRisk = page.getElementById('CheckRisk');
-            elIndicator = page.getElementById('Indicator');
+           // elCheckRisk = document.getElementById('CheckRisk');
+           // elIndicator = document.getElementById('Indicator');
             bindEvents();
         }
 

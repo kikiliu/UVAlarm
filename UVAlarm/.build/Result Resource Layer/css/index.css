@@ -32,6 +32,23 @@ h3 {
 	height: 110px;
 }
 
+#TimeSelection li {
+	float: left;
+	width: 90%;
+	border: solid gray 1px;
+	background-color: black;
+	height: 100px;
+}
+
+
+#MoreSPFSelection li {
+	float: left;
+	width: 90%;
+	border: solid gray 1px;
+	background-color: black;
+	height: 80px;
+}
+
 .bar {
 }
 

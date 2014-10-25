@@ -23,10 +23,18 @@ define({
         	elIndicator.innerHTML = value;
         }
 
-        function show(params) {
-        }
-
+        function show() {
+            console.log('risk: here');            	
+            tau.changePage('#Risk');
+        }      
+        
+        function onApplySunscreen() {
+            console.log('Risk: here');        	
+        	e.fire('apply.show');
+        }    
         function bindEvents() {
+        	var elApplySunscreen = document.getElementById('ApplySunscreen');
+            elApplySunscreen.addEventListener('click', onApplySunscreen);
         }
         
         /**
@@ -38,7 +46,7 @@ define({
         }
 
         e.on({
-            'views.page.risk.show': show
+            'views.page.current.risk.show': show
         });
 
         return {
