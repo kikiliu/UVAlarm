@@ -1,6 +1,25 @@
 #delete
 #add
+<<<<<<< Updated upstream
+=======
+res/wgt/js/views/page/applytime.js
+res/wgt/js/views/page/morespfoption.js
+>>>>>>> Stashed changes
 #modify
 res/wgt/author-signature.xml
+res/wgt/images/app_icon.png
+res/wgt/images/uv2.png
+res/wgt/images/uv3.png
+res/wgt/images/uv4.png
+res/wgt/images/uv5.png
+res/wgt/images/uv6.png
+res/wgt/images/uv7.png
+res/wgt/images/uv8.png
 res/wgt/index.html
+<<<<<<< Updated upstream
+=======
+res/wgt/js/views/page/apply.js
+res/wgt/js/views/page/init.js
+res/wgt/js/views/page/risk.js
+>>>>>>> Stashed changes
 res/wgt/signature1.xml
