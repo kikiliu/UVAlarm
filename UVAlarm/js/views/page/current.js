@@ -32,7 +32,6 @@ define({
         }        
         
         function bindEvents() {
-
         	var elCheckRisk = document.getElementById('CheckRisk');
             elCheckRisk.addEventListener('click', onCheckRisk);
         }
@@ -46,6 +45,7 @@ define({
          */
         function init() {
             page = document.getElementById('Current');
+            console.log(page);
            // elCheckRisk = document.getElementById('CheckRisk');
            // elIndicator = document.getElementById('Indicator');
             bindEvents();

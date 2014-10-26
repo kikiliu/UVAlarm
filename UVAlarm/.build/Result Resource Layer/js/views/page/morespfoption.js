@@ -49,6 +49,7 @@ define({
         }
 
         function bindEvents() {
+        	console.log("222");
         	var elSPF10 = document.getElementById('spf10'),
         		elSPF25 = document.getElementById('spf25'),
         		elSPF35 = document.getElementById('spf35'),

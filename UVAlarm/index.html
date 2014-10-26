@@ -11,7 +11,7 @@
 </head>
 <body>
 <div class=contents id="content">
-	<div id="Detecting" class="ui-page">
+	<div id="Detecting" class="ui-page ui-page-active">
 		<div class="bar">
 			<div class="active"></div><div></div><div></div><div></div>
 		</div>
@@ -36,8 +36,8 @@
 		</div>
 		<div>
 		<ul id="CurrentSelection" class="selection">
-			<li class="ui-btn"><a href="#Risk"><img src="./images/time_icon.png"/></a></li>
-			<li class="ui-btn"><a href="#Apply"><img src="./images/sunscreen_icon.png"/></a></li>
+			<li class="ui-btn"><a id="CheckRisk" href="#"><img src="./images/time_icon.png"/></a></li>
+			<li class="ui-btn"><a id="ApplySunscreen" href="#"><img src="./images/sunscreen_icon.png"/></a></li>
 		</ul>
 		</div>
 	</div>
@@ -48,15 +48,15 @@
 
         <h3 class="ui-title"><img class="app-icon" src="./images/app_icon.png" />Check your risk</h3>
 		<div class="remaining text-color-green">
-			<img src="./images/remain_green.png" />
+			<img src="./images/time1.png" />
 			<span class="icon-text" id="timetosunburn">3h 00m</span>
 			<div class="icon-description"id="sunscreenstatus">w/o<br/>sunscreen</div>
 			<div class="icon-note" >under current UV</div>
 		</div>
 		<div>
 		<ul id="CurrentSelection" class="selection">
-			<li class="ui-btn"><a href="#Detecting"><img src="./images/sensor_icon.png"/></a></li>
-			<li class="ui-btn"><a href="#Apply"><img src="./images/sunscreen_icon.png"/></a></li>
+			<li class="ui-btn"><a id="Detecting" href="#Detecting"><img src="./images/sensor_icon.png"/></a></li>
+			<li class="ui-btn"><a id="ApplySunscreen" href="#"><img src="./images/sunscreen_icon.png"/></a></li>
 		</ul>
 		</div>
 	</div>
@@ -76,7 +76,7 @@
 			<li id=spf15 class="ui-btn">SPF 15</li>
 			<li id=spf50 class="ui-btn">SPF 50</li>
 			<li id=spf30 class="ui-btn">SPF 30</li>
-			<li id=spfOther class="ui-btn"><a href="#MoreSPFOption">Other<br/>Options</a></li>
+			<li id=spfOther class="ui-btn">Other<br/>Options</li>
 		</ul>
 		</div>
 	</div>
@@ -96,7 +96,7 @@
 		</div>
 	</div>	
 	
-	<div id=MoreSPFOption class="ui-page ui-page-active">
+	<div id=MoreSPFOption class="ui-page">
 	<br/>
         <h3 class="ui-title"><img class="app-icon" src="./images/app_icon.png" />More SPF options</h3>
         <div class="vscroller ui-content">
@@ -106,8 +106,8 @@
 			<li id=spf25 class="ui-btn">SPF 25</li>
 			<li id=spf35 class="ui-btn">SPF 35</li>
 			<li id=spf40 class="ui-btn">SPF 40</li>
-			<li id=spf45 class="ui-btn">SPF 45</li>
 			<li class="ui-btn"><a href="#Apply">Cancel</a></li>
+			<li id=spf45 class="ui-btn">SPF 45</li>
 		</ul>
 		</div>
 	</div>
@@ -122,7 +122,7 @@
 		</div>
 		<div>
 		<ul id="WarningSelection" class="selection">
-			<li class="ui-btn"><a href="#"><img src="./images/dismiss_icon.png"/></a></li>
+			<li class="ui-btn"><a href="#Risk"><img src="./images/dismiss_icon.png"/></a></li>
 			<li class="ui-btn"><a href="#Apply"><img src="./images/sunscreen_icon.png"/></a></li>
 		</ul>
 		</div>

@@ -10,12 +10,14 @@ define({
     requires: [
         'core/event',
         'models/settings',
+        'models/pedometer'
     ],
     def: function viewsPageDetails(req) {
         'use strict';
 
         var e = req.core.event,
             page = null,
+            pedometer = req.models.pedometer,
             elIndicator = null;
 
         function refreshIndicator(value) {
@@ -23,12 +25,18 @@ define({
         }
 
         function show(params) {
-            console.log('detecting: here');  
-        	setTimeout(function(){tau.changePage('#Current');}, 4000);        	
+            console.log('detecting: show');
+            
+            
+            var data = pedometer.getData();
+            console.log(data.speed);
+        	
+            
+            setTimeout(function(){tau.changePage('#Current');}, 4000);        	
         }
         
         function bindEvents() {
-        	
+        	console.log("123");
         }
 
         /**
