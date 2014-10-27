@@ -23,21 +23,16 @@ define({
         function refreshIndicator(value) {
         	elIndicator.innerHTML = value;
         }
-
-        function show(params) {
+        
+        function show() {
         	tau.changePage('#Detecting');
             console.log('detecting: show');
             
-            
-            var data = pedometer.getData();
-            console.log(data.speed);
-        	
-            
+            //Temp, no UV sensor
             setTimeout(function(){tau.changePage('#Current');}, 4000);        	
         }
-        
+
         function bindEvents() {
-        	
         }
 
         /**

@@ -40,8 +40,13 @@ $(window).load(function(){
             tau.changePage('#Current');
         } else if (pageid === 'Current') {
             tau.changePage('#Detecting');
+            //Temp: No UV detecting
+            setTimeout(function(){tau.changePage('#Current');}, 4000);
         }
     });
+    
+    
+    // Temp: for demo, show warning message by swipe up
     var hammertime = Hammer(element).on("swipeup", function(event) {
     	page = document.getElementsByClassName('ui-page-active')[0];
         pageid = page ? page.id : '';	
