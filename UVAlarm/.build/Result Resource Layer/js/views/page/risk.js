@@ -71,7 +71,9 @@ define({
         	var hrs = Math.floor(value / 3600);
         	value = value - hrs * 3600;
         	var mins = Math.floor(value / 60);
+        	
         	screenTimeToSunburn.innerHTML = hrs+"h "+mins+"m";
+        	document.getElementById("warmingSunscreen-text2").innerHTML = hrs+"h "+mins+"m";
         	
         	if (hrs >= 3){		//Time Range 1
         		document.getElementById("time-image").src="./images/time1.png";	
@@ -79,7 +81,7 @@ define({
         		document.getElementById("timetosunburn").style.color = "#8CC63F"; 
         		document.getElementById("sunscreenstatus").style.color = "#8CC63F"; 
         		document.getElementById("icon-note").style.color = "#8CC63F"; 
-        	
+        		
         	} else if (hrs >= 2){  //Time Range 2
         		document.getElementById("time-image").src="./images/time2.png"; 
         		//Yellow

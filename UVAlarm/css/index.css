@@ -98,6 +98,7 @@ h3 {
 }
 
 .remaining .icon-text{
+	margin-top: 15px;
 	font-size:50pt;
 	vertical-align:middle;
 }
