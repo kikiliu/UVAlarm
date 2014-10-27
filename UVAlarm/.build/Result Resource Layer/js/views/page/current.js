@@ -35,10 +35,10 @@ define({
             return Math.floor(Math.random() * (max - min) + min);
         }
         
-        //Temp: Currently UV is randomly generate 
         function setUV(){
+        	//Temp: Currently UV is randomly generate 
+        	//TODO: Go to UV sensor Data 
         	var currentUV = getRandomArbitrary(1,13);
-
         	console.log("Random CurrentUV:"+currentUV);
         	
         	//change pic

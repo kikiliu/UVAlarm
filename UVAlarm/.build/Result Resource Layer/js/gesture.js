@@ -51,7 +51,6 @@ define({
                     tau.changePage('#Current');
                 } else if (pageid === 'Current') {
                     tau.changePage('#Detecting');
-                    //Temp: No UV detecting
                     e.fire('current.setUV');
                     setTimeout(function(){tau.changePage('#Current');}, 3000);
                 }
