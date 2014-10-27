@@ -73,7 +73,7 @@ define({
         	var mins = Math.floor(value / 60);
         	
         	screenTimeToSunburn.innerHTML = hrs+"h "+mins+"m";
-        	document.getElementById("warmingSunscreen-text2").innerHTML = hrs+"h "+mins+"m";
+        	document.getElementById("warningSunscreen-text2").innerHTML = hrs+"h "+mins+"m";
         	
         	if (hrs >= 3){		//Time Range 1
         		document.getElementById("time-image").src="./images/time1.png";	

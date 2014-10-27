@@ -4,7 +4,7 @@
     <author href="http://www.linkedin.com/pub/derek-kuo/7/663/54b/" email="DerekKuo@Berkeley.edu">DerekKuo</author>
     <content src="index.html"/>
     <feature name="http://tizen.org/feature/screen.size.normal.320.320"/>
-    <icon src="detect.png" height="127" width="140"/>
+    <icon src="app_icon.png" height="98" width="98"/>
     <name>UV Alarm</name>
     <tizen:privilege name="http://developer.samsung.com/privilege/healthinfo"/>
     <tizen:privilege name="http://tizen.org/privilege/healthinfo"/>
