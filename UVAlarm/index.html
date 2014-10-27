@@ -31,13 +31,13 @@
         <h3 class="ui-title"><img class="app-icon" src="./images/app_icon.png" />Current UV</h3>
 		<br/>
 		<div>
-			<img id="Indicator" src="./images/uv1.png" />
-			<div id="indicator-text">Low</div>
+			<img id="Indicator" src="./images/uv10.png" />
+			<div id="indicator-text">High</div>
 		</div>
 		<div>
 		<ul id="CurrentSelection" class="selection">
 			<li class="ui-btn"><a id="CheckRisk" href="#"><img src="./images/time_icon.png"/></a></li>
-			<li class="ui-btn"><a id="ApplySunscreen" href="#"><img src="./images/sunscreen_icon.png"/></a></li>
+			<li class="ui-btn"><a href="#Apply"><img src="./images/sunscreen_icon.png"/></a></li>
 		</ul>
 		</div>
 	</div>
@@ -55,7 +55,7 @@
 		</div>
 		<div>
 		<ul id="CurrentSelection" class="selection">
-			<li class="ui-btn"><a id="Detecting" href="#Detecting"><img src="./images/sensor_icon.png"/></a></li>
+			<li class="ui-btn"><a id="RestartDetecting" href="#"><img src="./images/sensor_icon.png"/></a></li>
 			<li class="ui-btn"><a id="ApplySunscreen" href="#"><img src="./images/sunscreen_icon.png"/></a></li>
 		</ul>
 		</div>
@@ -102,7 +102,6 @@
         <div class="vscroller ui-content">
 		<ul id="MoreSPFSelection" class="ui-listview">
 			<li id=spf10 class="ui-btn">SPF 10</li>
-			<li id=spf20 class="ui-btn">SPF 20</li>
 			<li id=spf25 class="ui-btn">SPF 25</li>
 			<li id=spf35 class="ui-btn">SPF 35</li>
 			<li id=spf40 class="ui-btn">SPF 40</li>
@@ -111,9 +110,9 @@
 		</ul>
 		</div>
 	</div>
-	<div id="Warning" class="ui-page">
+	<div id="WarningSunburn" class="ui-page">
 	<br />
-        <h3 class="ui-title"><img class="app-icon" src="./images/app_icon.png" />Apply sunscreen</h3>
+        <h3 class="ui-title"><img class="app-icon" src="./images/app_icon.png" />Getting Sunburn</h3>
         <br/>
         <div class="remaining">
 			<img src="./images/sunscreen_red.png" />
@@ -121,12 +120,31 @@
 			<div class="icon-text text-color-red">NOW</div>
 		</div>
 		<div>
-		<ul id="WarningSelection" class="selection">
+		<ul id="WarningSunburn" class="selection">
 			<li class="ui-btn"><a href="#Risk"><img src="./images/dismiss_icon.png"/></a></li>
 			<li class="ui-btn"><a href="#Apply"><img src="./images/sunscreen_icon.png"/></a></li>
 		</ul>
+	
 		</div>
 	</div>
+	<div id="WarningSunscreenExpired" class="ui-page">
+	<br />
+        <h3 class="ui-title"><img class="app-icon" src="./images/app_icon.png" />Sunscreen expired</h3>
+        <br/>
+        <div class="remaining">
+			<img src="./images/sunscreen_red.png" />
+			<span class="icon-note text-color-yellow">Apply</span>
+			<div class="icon-text text-color-yellow">NOW</div>
+		</div>
+		<div>
+		<ul id="WarningSunburn" class="selection">
+			<li class="ui-btn"><a href="#Risk"><img src="./images/dismiss_icon.png"/></a></li>
+			<li class="ui-btn"><a href="#Apply"><img src="./images/sunscreen_icon.png"/></a></li>
+		</ul>
+	
+		</div>
+	</div>	
+	
 </div>	
 
 <script src="./js/index.js"></script>

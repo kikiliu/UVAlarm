@@ -25,6 +25,7 @@ define({
         }
 
         function show(params) {
+        	tau.changePage('#Detecting');
             console.log('detecting: show');
             
             
@@ -36,7 +37,7 @@ define({
         }
         
         function bindEvents() {
-        	console.log("123");
+        	
         }
 
         /**
@@ -49,7 +50,9 @@ define({
         }
 
         e.on({
-            'views.page.current.show': show
+            'views.page.current.show': show,
+            'views.page.risk.detecting.show': show,
+            'gesture.detecting.show': show
         });
 
         return {

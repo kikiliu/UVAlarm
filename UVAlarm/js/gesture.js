@@ -42,5 +42,16 @@ $(window).load(function(){
             tau.changePage('#Detecting');
         }
     });
-    
+    var hammertime = Hammer(element).on("swipeup", function(event) {
+    	page = document.getElementsByClassName('ui-page-active')[0];
+        pageid = page ? page.id : '';	
+        
+    	console.log("Gesture: swipt up");
+    	
+    	if (pageid === 'Risk') {
+            tau.changePage('#WarningSunscreenExpired');
+        } else if (pageid === 'WarningSunscreenExpired'){
+        	tau.changePage('#WarningSunburn');
+        }
+    });   
 });

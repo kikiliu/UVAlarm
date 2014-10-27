@@ -22,8 +22,9 @@ define({
         'use strict';
 
         var e = req.core.event,
+        	showNotificationWarningSunburn = false,
+        	showNotificationWarningSuncreenExpired = false,
         	Timer = req.models.timer.Timer,
-        	
             page = null,
             elCheckRisk = null,
             elIndicator = null,
@@ -65,7 +66,15 @@ define({
         }      
         
         function updateTimeToSunburn(value) {
-        	screenTimeToSunburn.innerHTML = value;
+        	value = Math.round(value);
+        	
+        	var hrs = Math.floor(value / 3600);
+        	value = value - hrs * 3600;
+        	
+        	var mins = Math.floor(value / 60);
+        	
+        	screenTimeToSunburn.innerHTML = hrs+"h "+mins+"m";
+        	
         }
         
         function updateSunscreenStatus(value){
@@ -77,7 +86,10 @@ define({
         	e.fire('apply.show');
         }    
  
-        
+        function onClickRestartDetectingBtn() {
+            console.log('Risk: Restart Detecting');        	
+        	e.fire('detecting.show');
+        }           
 
 
         
@@ -90,13 +102,17 @@ define({
         	elSunscreenProtectionTime = elSPF * elBaseTime;
         	elSunscreenApply = true;
         	elSunscreenExpired = false;
+        	showNotificationWarningSuncreenExpired = false;
         }
         
         function refreshTimeForSkinburn(){
         	elTimeToSunburn = (elSkinResistanceTime + elSunscreenProtectionTime);
 
         	if (elTimeToSunburn < 0){
-        		// TODO: Send Notification 
+        		if (showNotificationWarningSunburn === false){
+        			tau.changePage("#WarningSunburn");
+        			showNotificationWarningSunburn = true;
+        		}
         		elTimeToSunburn = 0;
         	}
         	
@@ -134,7 +150,10 @@ define({
         	if (elSunscreenApply === true){
         		elSunscreenProtectionTime -= 1;
         		if (elSunscreenProtectionTime < 0){
-        			//TODO: Send Notification
+            		if (showNotificationWarningSuncreenExpired === false){
+            			tau.changePage("#WarningSunscreenExpired");
+            			showNotificationWarningSuncreenExpired = true;
+            		}
         			
         			elSunscreenExpired = true;
         			elSunscreenApply = false;
@@ -183,9 +202,10 @@ define({
         
         function bindEvents() {
         	var elApplySunscreenBtn = document.getElementById('ApplySunscreen');
-        	console.log(elApplySunscreenBtn.innerHTML);
+        	var elRestartDetectingBtn = document.getElementById('RestartDetecting');
+        	
             elApplySunscreenBtn.addEventListener('click', onClickApplySunscreenBtn);
-            
+            elRestartDetectingBtn.addEventListener('click',onClickRestartDetectingBtn);
         }
         
         /**
@@ -195,7 +215,8 @@ define({
             page = document.getElementById('Risk');
             screenTimeToSunburn = document.getElementById('timetosunburn');
             screenSunscreenStatus = document.getElementById('sunscreenstatus');
-           
+            
+            
             initAlgorithm();
             
             bindEvents();

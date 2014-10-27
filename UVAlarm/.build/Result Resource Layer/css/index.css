@@ -69,7 +69,7 @@ h3 {
 
 #indicator-text{
 	font-size:40pt;
-	color: rgb(49,149,0);
+	color: rgb(255,0,0);
 }
 
 .selection {
@@ -112,6 +112,10 @@ h3 {
 
 .remaining .text-color-red{
 	color:rgb(237,28,36)
+}
+
+.remaining .text-color-yellow{
+	color:rgb(251,176,59)
 }
 
 .remaining img{
