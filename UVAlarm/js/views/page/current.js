@@ -31,6 +31,42 @@ define({
         	e.fire('risk.show');
         }        
         
+        function getRandomArbitrary(min, max) {
+            return Math.floor(Math.random() * (max - min) + min);
+        }
+        
+        //Temp: Currently UV is randomly generate 
+        function setUV(){
+        	var currentUV = getRandomArbitrary(1,13);
+
+        	console.log("Random CurrentUV:"+currentUV);
+        	
+        	//change pic
+        	document.getElementById('Indicator').src = "./images/uv"+currentUV+".png";
+        	//change text
+        	if (currentUV <=2){ // low
+        		document.getElementById('indicator-text').innerHTML = "Low";
+        		document.getElementById('indicator-text').style.color = "#8CC63F";
+        	} else if (currentUV <=5){ // Moderate
+        		document.getElementById('indicator-text').innerHTML = "Moderate";
+        		document.getElementById('indicator-text').style.color = "#ffff00";
+        	} else if (currentUV <=7){ // High
+        		document.getElementById('indicator-text').innerHTML = "High";
+        		document.getElementById('indicator-text').style.color = "#e0570d";
+        	} else if (currentUV <=10){ // Very High
+        		document.getElementById('indicator-text').innerHTML = "Very High";
+        		document.getElementById('indicator-text').style.color = "#ed1c23";
+        	} else if (currentUV >10){ // Extremely High
+        		document.getElementById('indicator-text').innerHTML = "Extremely High";
+        		document.getElementById('indicator-text').style.color = "#916ae6";
+        	}
+        	//send UV to Risk page
+        	console.log("send UV to Risk:"+"risk.setUV"+currentUV);
+        	e.fire('risk.setUV'+currentUV);
+        	
+        	
+        }
+        
         function bindEvents() {
         	var elCheckRisk = document.getElementById('CheckRisk');
             elCheckRisk.addEventListener('click', onCheckRisk);
@@ -52,7 +88,8 @@ define({
         }
 
         e.on({
-            'views.page.current.show': show
+            'views.page.current.show': show,
+            'views.page.detecting.current.setUV': setUV 
         });
 
         return {

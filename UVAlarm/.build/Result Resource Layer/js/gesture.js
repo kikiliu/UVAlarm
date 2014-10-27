@@ -40,7 +40,8 @@ $(window).load(function(){
             tau.changePage('#Current');
         } else if (pageid === 'Current') {
             tau.changePage('#Detecting');
-            setTimeout(function(){tau.changePage('#Current');}, 4000);
+            //Temp: No UV detecting
+            setTimeout(function(){tau.changePage('#Current');}, 3000);
         }
     });
     

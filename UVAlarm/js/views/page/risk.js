@@ -73,7 +73,6 @@ define({
         	var mins = Math.floor(value / 60);
         	screenTimeToSunburn.innerHTML = hrs+"h "+mins+"m";
         	
-        	console.log("123444");
         	if (hrs >= 3){		//Time Range 1
         		document.getElementById("time-image").src="./images/time1.png";	
         		//Green
@@ -125,6 +124,7 @@ define({
 
         
         function changeUV(value){
+        	console.log("Risk: Change UV to "+value);
         	elSensorUV = value;     	
         }
         
@@ -162,6 +162,7 @@ define({
         	console.log(elSkinResistanceTime);
         	console.log(elSunscreenProtectionTime);
         	console.log(elSunscreenStatus);
+        	
         }        
         
         function refreshSkinResistenceTime(){
@@ -211,8 +212,7 @@ define({
             //Daily MED base for people is 21 mJ/cm^2
             elDailyMED = 21;
             elAccumulativeMED = 0;
-            
-            elSensorUV = 0;            
+                      
             elAdjustmentBySkinType = 1;
             elSPF = 0;
 
@@ -223,9 +223,6 @@ define({
             
             timer = new Timer(1000, 'views.risk.tick');
             timer.run();
-            
-            //testing purpose
-            changeUV(10);
         }        
         
         
@@ -292,6 +289,54 @@ define({
         function applyTime90m(){
         	elSunscreenProtectionTime -= 5400;
         }
+        function setUV0(){
+            changeUV(0);
+        }
+        function setUV1(){
+            changeUV(1);
+        }
+        function setUV2(){
+            changeUV(2);
+        }
+        function setUV3(){
+            changeUV(3);
+        }
+        function setUV4(){
+            changeUV(4);
+        }
+        function setUV5(){
+            changeUV(5);
+        }
+        function setUV6(){
+            changeUV(6);
+        }
+        function setUV7(){
+            changeUV(7);
+        }
+        function setUV8(){
+            changeUV(8);
+        }
+        function setUV9(){
+            changeUV(9);
+        }
+        function setUV10(){
+            changeUV(10);
+        }
+        function setUV11(){
+            changeUV(11);
+        }
+        function setUV12(){
+            changeUV(12);
+        }
+        function setUV13(){
+            changeUV(13);
+        }
+        function setUV14(){
+            changeUV(14);
+        }
+        function setUV15(){
+            changeUV(15);
+        }
         
         e.on({
             'views.page.current.risk.show': show,
@@ -308,7 +353,23 @@ define({
             'views.page.applytime.risk.applytimenow': applyTimeNow,
             'views.page.applytime.risk.applytime30m': applyTime30m,
             'views.page.applytime.risk.applytime60m': applyTime60m,
-            'views.page.applytime.risk.applytime90m': applyTime90m
+            'views.page.applytime.risk.applytime90m': applyTime90m,
+            'views.page.current.risk.setUV0': setUV0,
+            'views.page.current.risk.setUV1': setUV1,
+            'views.page.current.risk.setUV2': setUV2,
+            'views.page.current.risk.setUV3': setUV3,
+            'views.page.current.risk.setUV4': setUV4,
+            'views.page.current.risk.setUV5': setUV5,
+            'views.page.current.risk.setUV6': setUV6,
+            'views.page.current.risk.setUV7': setUV7,
+            'views.page.current.risk.setUV8': setUV8,
+            'views.page.current.risk.setUV9': setUV9,
+            'views.page.current.risk.setUV10': setUV10,
+            'views.page.current.risk.setUV11': setUV11,
+            'views.page.current.risk.setUV12': setUV12,
+            'views.page.current.risk.setUV13': setUV13,
+            'views.page.current.risk.setUV14': setUV14,
+            'views.page.current.risk.setUV15': setUV15
         });
 
         return {

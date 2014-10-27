@@ -41,7 +41,7 @@ $(window).load(function(){
         } else if (pageid === 'Current') {
             tau.changePage('#Detecting');
             //Temp: No UV detecting
-            setTimeout(function(){tau.changePage('#Current');}, 4000);
+            setTimeout(function(){tau.changePage('#Current');}, 3000);
         }
     });
     
