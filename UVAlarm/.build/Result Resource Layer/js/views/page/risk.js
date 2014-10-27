@@ -157,12 +157,12 @@ define({
         	
         	updateTimeToSunburn(elTimeToSunburn);
         	updateSunscreenStatus(elSunscreenStatus);
-        	
+        	/*
         	console.log(elTimeToSunburn);
         	console.log(elSkinResistanceTime);
         	console.log(elSunscreenProtectionTime);
         	console.log(elSunscreenStatus);
-        	
+        	*/
         }        
         
         function refreshSkinResistenceTime(){

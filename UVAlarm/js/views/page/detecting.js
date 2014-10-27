@@ -27,7 +27,6 @@ define({
         function show() {
         	tau.changePage('#Detecting');
             console.log('detecting: show');
-            //Temp, no UV sensor
             e.fire('current.setUV');
             setTimeout(function(){tau.changePage('#Current');}, 3000);        	
         }

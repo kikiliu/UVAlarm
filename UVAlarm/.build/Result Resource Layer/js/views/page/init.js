@@ -17,7 +17,8 @@ define({
         'views/page/risk',
         'views/page/apply',
         'views/page/applytime',
-        'views/page/morespfoption'
+        'views/page/morespfoption',
+        'gesture'
     ],
     def: function viewsPageInit(req) {
         'use strict';

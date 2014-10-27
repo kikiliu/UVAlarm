@@ -89,7 +89,8 @@ define({
 
         e.on({
             'views.page.current.show': show,
-            'views.page.detecting.current.setUV': setUV 
+            'views.page.detecting.current.setUV': setUV, 
+            'gesture.current.setUV': setUV
         });
 
         return {
