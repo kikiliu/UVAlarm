@@ -48,7 +48,8 @@ define({
             elUVToMED = 0.0025,
         	//Variable for calculating Sunscreen Protection Time
             elSPF = null,
-        	elBaseTime = null,
+            //For each SPF the time to expire is 10 mins = 900 seconds
+            elBaseTime = 900,
         	elSunscreenApply = null,
         	elSunscreenExpired = null,
         	
@@ -67,14 +68,44 @@ define({
         
         function updateTimeToSunburn(value) {
         	value = Math.round(value);
-        	
         	var hrs = Math.floor(value / 3600);
         	value = value - hrs * 3600;
-        	
         	var mins = Math.floor(value / 60);
-        	
         	screenTimeToSunburn.innerHTML = hrs+"h "+mins+"m";
         	
+        	console.log("123444");
+        	if (hrs >= 3){		//Time Range 1
+        		document.getElementById("time-image").src="./images/time1.png";	
+        		//Green
+        		document.getElementById("timetosunburn").style.color = "#8CC63F"; 
+        		document.getElementById("sunscreenstatus").style.color = "#8CC63F"; 
+        		document.getElementById("icon-note").style.color = "#8CC63F"; 
+        	
+        	} else if (hrs >= 2){  //Time Range 2
+        		document.getElementById("time-image").src="./images/time2.png"; 
+        		//Yellow
+        		document.getElementById("timetosunburn").style.color = "#ffff00"; 
+        		document.getElementById("sunscreenstatus").style.color = "#ffff00"; 
+        		document.getElementById("icon-note").style.color = "#ffff00"; 
+        	} else if (hrs >= 1){  //Time Range 3
+        		document.getElementById("time-image").src="./images/time3.png"; 
+        		//orange
+        		document.getElementById("timetosunburn").style.color = "#fbb13b"; 
+        		document.getElementById("sunscreenstatus").style.color = "#fbb13b"; 
+        		document.getElementById("icon-note").style.color = "#fbb13b"; 
+        	} else if (mins >=30){  //Time Range 4
+        		document.getElementById("time-image").src="./images/time4.png"; 
+        		//red
+        		document.getElementById("timetosunburn").style.color = "#ed1c23"; 
+        		document.getElementById("sunscreenstatus").style.color = "#ed1c23"; 
+        		document.getElementById("icon-note").style.color = "#ed1c23"; 
+        	} else{  //Time Range 5
+        		document.getElementById("time-image").src="./images/time5.png";
+        		//purple
+        		document.getElementById("timetosunburn").style.color = "#916ae6"; 
+        		document.getElementById("sunscreenstatus").style.color = "#916ae6"; 
+        		document.getElementById("icon-note").style.color = "#916ae6"; 
+        	}
         }
         
         function updateSunscreenStatus(value){
@@ -168,7 +199,6 @@ define({
             refreshSkinResistenceTime();
             refreshSunscreenProtectionTime();
             refreshTimeForSkinburn();
-            
         }        
 
         function initAlgorithm(){
@@ -185,8 +215,7 @@ define({
             elSensorUV = 0;            
             elAdjustmentBySkinType = 1;
             elSPF = 0;
-            //For each SPF the time to expire is 15 mins = 900 seconds
-            elBaseTime = 900;
+
             
             
             elSunscreenApply = false;
