@@ -1,6 +1,0 @@
-INDEX VERSION 1.126+/Users/kikiliu/UVAlarm/EclipseWorkspace/.metadata/.plugins/org.eclipse.jdt.core
-1965948759.index
-3182966635.index
-2313525843.index
-1648995728.index
-3917932569.index
