@@ -45,19 +45,19 @@ define({
         	document.getElementById('Indicator').src = "./images/uv"+currentUV+".png";
         	//change text
         	if (currentUV <=2){ // low
-        		document.getElementById('indicator-text').innerHTML = "Low";
+        		document.getElementById('indicator-text').innerHTML = currentUV+": Low";
         		document.getElementById('indicator-text').style.color = "#8CC63F";
         	} else if (currentUV <=5){ // Moderate
-        		document.getElementById('indicator-text').innerHTML = "Moderate";
+        		document.getElementById('indicator-text').innerHTML = currentUV+": Moderate";
         		document.getElementById('indicator-text').style.color = "#ffff00";
         	} else if (currentUV <=7){ // High
-        		document.getElementById('indicator-text').innerHTML = "High";
+        		document.getElementById('indicator-text').innerHTML = currentUV+": High";
         		document.getElementById('indicator-text').style.color = "#e0570d";
         	} else if (currentUV <=10){ // Very High
-        		document.getElementById('indicator-text').innerHTML = "Very High";
+        		document.getElementById('indicator-text').innerHTML = currentUV+": Very High";
         		document.getElementById('indicator-text').style.color = "#ed1c23";
         	} else if (currentUV >10){ // Extremely High
-        		document.getElementById('indicator-text').innerHTML = "Extremely High";
+        		document.getElementById('indicator-text').innerHTML = currentUV+": Dangerous";
         		document.getElementById('indicator-text').style.color = "#916ae6";
         	}
         	//send UV to Risk page
